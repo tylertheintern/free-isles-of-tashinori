@@ -1,0 +1,31 @@
+\documentclass[letterpaper,10pt,twoside,twocolumn,openany]{book}
+
+\usepackage[english]{babel}
+
+\usepackage[utf8]{inputenc}
+\usepackage{lipsum}
+\usepackage{listings}
+
+\usepackage{dnd}
+
+\usepackage{subfiles}
+
+
+\usepackage{hyperref}%make sure this is the last package included
+\hypersetup{colorlinks=true, linkcolor=blue}
+
+\lstset{%
+	basicstyle=\ttfamily,
+	language=[LaTeX]{TeX},
+}
+
+\title{The Free Isles of Tashinori\\(title page presentation is WIP yet)}
+
+\begin{document}
+	
+	\maketitle
+	\tableofcontents
+	\subfile{ChapterFiles/Introduction}
+	\subfile{ChapterFiles/The-Isle-of-the-Pale-Mist}
+	
+\end{document}
